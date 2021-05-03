@@ -1,4 +1,5 @@
-// vienos eilut4s komentaras
+// vienos eilutes komentaras
+
 
 /*
 keliu

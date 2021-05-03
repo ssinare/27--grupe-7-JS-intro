@@ -22,7 +22,7 @@ const amzius = 99;
 const buvomDuse = true;
 const dabarYraNaktis = false;
 const pazymiai = [5, 2, 8, 10];
-const draugai = ['Rika','Nedas', 'Ieva'];
+const draugai = ['Rika','Nedas','Ieva'];
 const maryte = {
     vardas: 'Maryte',
     amzius: 87,
@@ -48,4 +48,5 @@ console.log(rankos);
 
 const kojos = 5;
 
-const draugai = 6;
+console.log(draugai);
+console.log(draugai[1]);
