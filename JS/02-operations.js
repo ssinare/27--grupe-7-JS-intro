@@ -88,18 +88,9 @@ if (pirmas <= antras) {
     console.log('Bandykite kitą kartą');
     }
 
-   
-    
+ const alt = [4, -2, 5, 8, 3, 6];
+ 
+ const altSum = alt[0] + alt[1] - alt[3] + alt[4] - alt[5];
+ console.log(altSum);
 
-
-
-
-
-
-
-
-
-
-
-
-
+// atvirkstinis eiliskumas
