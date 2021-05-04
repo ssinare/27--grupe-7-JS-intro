@@ -1,8 +1,10 @@
 /*
 STRINGS
-TEKSTINE REIKSME GALI BUTI INICIJUOTA:
-- VIENA KABUTE
-
+tekstine reiksme gali buti inicijuota:
+- vienguba (') kabute
+- dvyguba (") kabute
+- backtick (`) kabute
+Multi-line tekstas kiekvienoje teksto neuzbaigiacioje eiluteje turi \
 */
 
 const text1 = 'Labas rytas';
@@ -19,10 +21,6 @@ const kabutes2u = "Viengubos kabutes (\') ir dvigubos kabutes (\").";
 
 console.log(kabutes1u);
 console.log(kabutes2u);
-
-
-// kiekvienoje teksto neuzbaigiancioje eiluteje dedamas multiline \
-// backti
 
 
 const imgSrc = './img/logo.png';
