@@ -20,3 +20,17 @@ const vartai = 'uzdaryti';
 const suoPabego = vartai === 'atidaryti' ? 'suo pabego':'suo sedi kieme';
 console.log('Kur suo? ', suoPabego);
 
+console.log('----------------------------');
+const ats = 0 > 4 ? 5 : 7;
+
+console.log(ats);
+
+const boo = false ? true ? 1 : 2 : 3;
+/*
+false 
+    ? true 
+        ? 1 
+        : 2
+    : 3;
+*/
+console.log(boo);

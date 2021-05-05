@@ -12,6 +12,7 @@ pagal informacijos tipa:
 - string (tekstas)
 - boolean (logine reiksme)
 - array (sarasas)
+- object (objektas)
 - null
 - undefined
 
@@ -38,9 +39,6 @@ const maryte = {
 const bendraPazymiuSuma = 0;
 console.log(amzius);
 console.log(bendraPazymiuSuma);
-console.log(bendraPazymiuSuma);
-console.log(bendraPazymiuSuma);
-console.log(bendraPazymiuSuma);
 
 
 const rankos = 2;
@@ -50,3 +48,15 @@ const kojos = 5;
 
 console.log(draugai);
 console.log(draugai[1]);
+const pirmasSkaicius = 0;
+console.log(pirmasSkaicius);
+
+const stipinuKiekis = 40;
+console.log(stipinuKiekis);
+
+const neigiamiSkaiciai = [-5, -8, -1, -0.0001, -999];
+console.log(neigiamiSkaiciai);
+
+const pazymys_1 = 5;
+const pazymys_2 = 2;
+const pazymys_4 = 10;
