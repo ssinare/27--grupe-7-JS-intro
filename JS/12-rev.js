@@ -19,8 +19,13 @@ console.log('-------------------------------');
 let atsakymas = '';   
 for (let i = 0; i < tekstas.length; i++) {
     atsakymas = tekstas[i] + atsakymas;
+   //atsakymas += tekstas[tekstas.lenght - i - 1]; 
         }
     console.log(tekstas, '->', atsakymas);
+
+
+ //   for (let i = 0; i < tekstas.length; i++) {
+//    atsakymas += tekstas[tekstas.lenght - i - 1];
 
 console.log('-------------------------------');
 let paukstis = [];
@@ -40,3 +45,5 @@ for (let i = tekstas.length - 1; i >= 0; i--) {
     }
 console.log(paukstis);
 console.log(paukstis.join(''));
+
+

@@ -3,9 +3,6 @@
 /*
 skaiciu suma intervale
 */
-
-
-
 const nuo= 0;
 const iki = 4;
 let sumaa= 0;
@@ -38,3 +35,43 @@ for (let i = ikii; i >= nuoo; i--) {
 
 console.log(`Intervale nuo ${nuoo} iki ${ikii} suma yra ${sumaaa}.`);
 
+console.log(-------------------------------);
+
+
+
+console.log IntervaloPradzia = 'Intervalo pradzia';
+const pradzia = [int];
+console.log IntervaloPabaiga = 'Intervalo pabaiga';
+const pabaiga = [int] pabaiga;
+
+suma = 0;
+laikasNuo = new Date(dateString);
+$laikasNuo = Get-Date
+for (let i = $pradzia; $i -le $pabaiga; $i++){
+    $suma += $i
+}
+$laikasIki = Get-Date
+laikasIki = new Date(dateString);
+Write-Host "Skaciu intervale suma pirmu budu: $($suma)"
+Write-Host "Skaiciavimas truko: $(New-TimeSpan -Start $laikasNuo -End $laikasIki)"
+write-host
+
+$suma = 0
+$laikasNuo = Get-Date
+$elementuSkacius = $pabaiga -  $pradzia
+$elementuSkacius = [Math]::Abs($elementuSkacius) +1
+$liekana = $elementuSkacius % 2
+
+if($liekana -ne 0){
+    $poruSkaicius = $elementuSkacius / 2 -0.5
+    $vidurinisElementas = $pradzia + $poruSkaicius
+}
+else{
+    $poruSkaicius = $elementuSkacius / 2 
+    $vidurinisElementas = 0    
+}
+
+$suma = ($pradzia + $pabaiga) * $poruSkaicius + $vidurinisElementas
+$laikasIki = Get-Date
+Write-Host "Skaciu intervale suma antru budu: $($suma)"
+Write-Host "Skaiciavimas truko: $(New-TimeSpan -Start $laikasNuo -End $laikasIki)"
