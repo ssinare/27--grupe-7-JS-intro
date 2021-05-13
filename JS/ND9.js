@@ -14,10 +14,56 @@ Example:
 
 function findMissingLetter(array)
 {
-  return ' ';
+  let abc = "abcdefghijklmnopqrstuvwxyz";
+  if (abc.indexOf(array[0]) == -1){
+    abc = abc.toUpperCase();
+  }
+  let i = abc.indexOf(array[0]) +1;
+  console.log(i);
+  for(j = 1; array.length - 1; j++){
+    if (array[j] == abc.substr(i,1)) {
+      i++;
+    }
+    else {
+      return abc.substr(i,1);
+    }
+  }
+
+  
+ }
+
+
+
+console.log(findMissingLetter(['a','b','c','d','f']));//, 'e');
+console.log(findMissingLetter(['O','Q','R','S']));//, 'P');
+
+function findMissingLetter(array) {
+  let first = array[0].charCodeAt(0)
+  for (let i = 1; i < array.length; i++) {
+    if (first + i !== array[i].charCodeAt(0)) {
+      return String.fromCharCode(first + i)
+    }
+  }
+  throw new Error("Invalid input")
+}
+
+function findMissingLetter(array)
+{
+   var i=array[0].charCodeAt();
+   array.map(x=>  x.charCodeAt()==i?i++:i);
+   return String.fromCharCode(i);
 }
 
 
+const findMissingLetter = (array) => {
+  const alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  const start = alphabet.indexOf(array[0]);
+  return alphabet.slice(start, start + array.length).find(el => !array.includes(el));
+};
 
-console.log(findMissingLetter(['a','b','c','d','f']), 'e');
-console.log(findMissingLetter(['O','Q','R','S']), 'P');
+function findMissingLetter(array)
+
+{
+  let i = array[0].charCodeAt(0);
+  return String.fromCharCode(array.find(el => el.charCodeAt(0) != i++).charCodeAt(0) - 1);
+}
